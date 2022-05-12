@@ -12,6 +12,13 @@ class Search extends Component {
     }
 searchPlayer = (e) => {
     const playerName = this.searchPlayer.searchTerm.split(' ');
+    const firstName = playerName[0];
+    const lastName = playerName[1];
+    e.preventDefault();
+    if (firstName && lastName) {
+        // get the players first and last name
+        this.props.getPlayer(firstName, lastName);
+    }
 }
 
 }
