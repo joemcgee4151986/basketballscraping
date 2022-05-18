@@ -1,8 +1,8 @@
-import {GET_PLAYER} from '.actionTypes';
+import {GET_PLAYER} from './actionTypes';
 
-export function getPlayer(firstName, lastName) {
+export function getPlayer(firstName, surname) {
     return {
         type:GET_PLAYER,
-        payload: {firstName, lastName}
+        payload: {firstName, surname}
     }
 }

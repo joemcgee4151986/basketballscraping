@@ -25,18 +25,20 @@ return(
 }
 
 const Outer = styled.div`
-background-color:#f9f9fc;
-box-sizing: border-box;
+    background-color: #F9F9FC;
+    box-sizing: border-box;
 `
+
 const StatLabel = styled.span`
-display:block;
-font-weight: bold;
-letter-spacing: 2px;
-margin-top: 35px;
-margin-left: 30px;
+    display: block;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-top: 39px;
+    margin-left: 25px;
 `
+
 const StatValue = styled.p`
-font-weight: bold;
+    font-weight: bold;
     color: #1F6BEF;
     font-size: 50px;
     margin-top: 10px;

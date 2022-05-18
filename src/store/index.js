@@ -9,7 +9,8 @@ const reduxDevTools =  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEV
 const sagaMiddleware = createSagaMiddleware();
 
 let store = createStore(
-    reducers,compose(sagaMiddleware(),reduxDevTools)
+    reducers,
+    compose(applyMiddleware(sagaMiddleware),reduxDevTools)
 );
 sagaMiddleware.run(rootSaga);
 

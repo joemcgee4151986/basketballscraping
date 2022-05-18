@@ -19,8 +19,8 @@ const statsWeWant = [
 
 ]
 
-function fetchPlayerData(firstName, lastName) {
-    let url = `${statsURL}${lastName}/${firstName}`;
+function fetchPlayerData(firstName, surname) {
+    let url = `${statsURL}${surname}/${firstName}`;
 
 
 return axios.get(
@@ -29,13 +29,13 @@ return axios.get(
 }
 
 export function* retrievePlayer(action) {
-    let {firstName, lastName} = action.payload;
+    let {firstName, surname} = action.payload;
     try{
         //grab the data from the player heroku api
-        let response  = yield call(fetchPlayerData,firstName,lastName);
+        let response  = yield call(fetchPlayerData,firstName,surname);
             //if your search yields a player
         if (response.data.name) {
-            let image = `${imageURL}${lastName}/${firstName}`;
+            let image = `${imageURL}${surname}/${firstName}`;
             let stats = [];
 
             for(let key in response.data) {

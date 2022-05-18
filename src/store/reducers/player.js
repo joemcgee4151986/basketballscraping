@@ -5,31 +5,32 @@ import {
 } from "../actions/actionTypes";
 
 const initialState = {
-    player:{},
+    player: {},
     _loading: false,
-    error:""
+    error: ""
 };
 
-export default function(state = initialState, action){
-    switch(action.type){
+// eslint-disable-next-line import/no-anonymous-default-export
+export default function (state = initialState, action) {
+    switch (action.type) {
         case GET_PLAYER:
-            return{
+            return {
                 ...state,
                 _loading: true
             };
-case GET_PLAYER_SUCCESS:
-    return {
-        ...state,
-        player: { ...action.payload},
-        _loading: false
-    };
-case GET_PLAYER_FAIL:
-    return {
-        ...state,
-        _loading: false,
-        error: action.payload
-    };
-    default:
-        return state;
+        case GET_PLAYER_SUCCESS:
+            return {
+                ...state,
+                player: { ...action.payload },
+                _loading: false
+            };
+        case GET_PLAYER_FAIL:
+            return {
+                ...state,
+                _loading: false,
+                error: action.payload
+            };
+        default:
+            return state;
     }
 }
