@@ -30,18 +30,18 @@ const Outer = styled.div`
 `
 
 const StatLabel = styled.span`
-    display: block;
-    font-weight: bold;
-    letter-spacing: 1.5px;
-    margin-top: 39px;
-    margin-left: 25px;
+display: block;
+font-weight: bold;
+letter-spacing: 1.5px;
+margin-top: 39px;
+margin-left: 25px;
 `
 
 const StatValue = styled.p`
-    font-weight: bold;
-    color: #1F6BEF;
-    font-size: 50px;
-    margin-top: 10px;
-    margin-bottom: 27px;
-    margin-left: 25px;
+font-weight: bold;
+color: #1F6BEF;
+font-size: 50px;
+margin-top: 10px;
+margin-bottom: 27px;
+margin-left: 25px;
 `

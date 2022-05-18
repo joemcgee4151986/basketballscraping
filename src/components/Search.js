@@ -51,28 +51,28 @@ const SearchWrapper = styled.div`
 `
 
 const SearchBar = styled.input`
-    padding: 14px 20px;
-    border: 1px solid #f9f9f9;
-    color: #8D96AA;
-    font-size: 18px;
-    width: 250px;
-    border-radius: 6px 0px 0px 6px;
-    flex:7;
+padding: 14px 20px;
+border: 1px solid #f9f9f9;
+color: #8D96AA;
+font-size: 18px;
+width: 250px;
+border-radius: 6px 0px 0px 6px;
+flex:7;
 `
 
 const SearchButton = styled.button`
-    background-color: #2F5EE5;
-    padding: 14px 20px;
-    border:none;
-    border-radius: 0px 6px 6px 0px;
-    cursor: pointer;
-    flex:1;
+background-color: #2F5EE5;
+padding: 14px 20px;
+border:none;
+border-radius: 0px 6px 6px 0px;
+cursor: pointer;
+flex:1;
 `
 
 
 const Error = styled.span`
-    color: red;
-    padding: 5px;
-    display:block;
-    font-size:12px;
+color: red;
+padding: 5px;
+display:block;
+font-size:12px;
 `
